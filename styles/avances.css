@@ -1,0 +1,164 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Contenedor principal */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header.encabezado {
+  width: 100%;
+  background-color: #1e2122;
+  color: white;
+  padding: 1rem 0 0.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Navegación */
+nav ul.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  background-color: transparent;
+}
+
+nav ul.nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul.nav li a:hover,
+nav ul.nav li a.activo {
+  color: #ff9900;
+}
+
+/* Main */
+main.contenido {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título principal */
+.titulo-avances {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+.titulo-avances h2 {
+  font-size: 2rem;
+  color: #002B5B;
+  margin: 0;
+}
+
+/* Tarjetas */
+.card-avance {
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.card-avance h3 {
+  color: #002B5B;
+  margin-bottom: 1rem;
+}
+
+.card-avance ul {
+  padding-left: 1.5rem;
+}
+
+.card-avance li {
+  margin-bottom: 0.5rem;
+}
+
+/* Imágenes centradas */
+.imagen-centrada {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.imagen-centrada img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #1e2122;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: auto;
+}
+
+/* Enlaces */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul.nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .titulo-avances h2 {
+    font-size: 1.5rem;
+  }
+  .card-avance img {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+}
