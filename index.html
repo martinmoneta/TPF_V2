@@ -18,6 +18,11 @@
         <li><a href="proyectos.html">🛠 Proyecto</a></li>
       </ul>
     </nav>
+
+    <div class="modo-toggle" style="margin-top: 10px;">
+      <button id="lightBtn">Modo Claro</button>
+      <button id="darkBtn">Modo Oscuro</button>
+    </div>
   </header>
 
   <main class="contenido">
@@ -28,14 +33,51 @@
           <li>Nicolás Zeoli – <a href="https://nicolaszeoliuade.github.io/UVA2-ZeoliPrimerParcial/index.html" target="_blank">Ver Portfolio</a></li>
           <li>Sasha Ejarque – <a href="https://sashaejarque.github.io/DyDW-UVA2-tpo/" target="_blank">Ver Portfolio</a></li>
           <li>Milton Sosa – <em>Portfolio en construcción</em></li>
-          <li>Emiliano Pascazi- <a href ="https://emiipasca.github.io/Examen-Parcial/index.html target="_blank">Ver Portfolio</a></li>
+          <li>Emiliano Pascazi- <a href ="https://emiipasca.github.io/Examen-Parcial/index.html" target="_blank">Ver Portfolio</a></li>
         </ul>
-      </section>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 – Grupo 3 – Curso: Diseño y Desarrollo Web (15130)<br>Profesora: Patricia Litovicius</p>
   </footer>
+
+
+  <button onclick="topFunction()" id="scrollTopBtn" title="Ir arriba">↑</button>
+
+  <script>
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const lightBtn = document.getElementById("lightBtn");
+    const darkBtn = document.getElementById("darkBtn");
+
+    lightBtn.addEventListener("click", function() {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    });
+
+    darkBtn.addEventListener("click", function() {
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    });
+  });
+
+ 
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  
   </div>
 </body>
 </html>
