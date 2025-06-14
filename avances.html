@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avances del Proyecto</title>
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/avances.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,20 +18,16 @@
         <li><a href="proyectos.html">🛠 Proyecto</a></li>
       </ul>
     </nav>
-
-    <!-- BOTONES MODO CLARO / OSCURO -->
-    <div class="modo-toggle" style="margin-top: 10px;">
-      <button id="lightBtn">Modo Claro</button>
-      <button id="darkBtn">Modo Oscuro</button>
-    </div>
   </header>
 
   <main class="contenido">
 
+    
     <section class="titulo-avances">
       <h2>Avances del Proyecto: Centro Cultural "Movimiento Vivo"</h2>
     </section>
 
+    
     <section class="card-avance">
       <h3>Texto Introductorio</h3>
       <p><strong>Movimiento Vivo</strong> es un centro cultural comprometido con su comunidad, impulsando la cultura popular en todas sus formas.</p>
@@ -100,43 +96,6 @@
   <footer>
     <p>©️ 2025 - Grupo 9 | Curso: Diseño y Desarrollo Web (15130)<br>Profesora: Patricia Litovicius</p>
   </footer>
-
-  <!-- BOTÓN SCROLL TOP -->
-  <button onclick="topFunction()" id="scrollTopBtn" title="Ir arriba">↑</button>
-
-  <!-- SCRIPTS -->
-  <script>
-  // Modo Claro / Oscuro
-  document.addEventListener("DOMContentLoaded", function() {
-    const lightBtn = document.getElementById("lightBtn");
-    const darkBtn = document.getElementById("darkBtn");
-
-    lightBtn.addEventListener("click", function() {
-      document.body.classList.add("light-mode");
-      document.body.classList.remove("dark-mode");
-    });
-
-    darkBtn.addEventListener("click", function() {
-      document.body.classList.add("dark-mode");
-      document.body.classList.remove("light-mode");
-    });
-  });
-
-  // Scroll Top Button
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-    const btn = document.getElementById("scrollTopBtn");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  }
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  </script>
 </div>
 </body>
 </html>
